@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index Page</title>
+  <style>
+    /* Basic styling for tables and forms */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Content -->
+  <header>
+    <h1>Welcome to My Web Page For a PLP Assignment</h1>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>My Ordered List</h2>
+    <ol type="I">
+      <li>Diet Coke</li>
+      <li>Chips</li>
+      <li>White Bread</li>
+      <li>Gummy Bears</li>
+      <li>Paper Towels</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Image Sourced From Pexels</h2>
+    <img src="https://images.pexels.com/photos/1108090/pexels-photo-1108090.jpeg" alt="Nature" style="width:100%; height:auto;">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact Information</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thabo Mokoena</td>
+          <td>1234 Main Street, Johannesburg</td>
+          <td>072-123-4567</td>
+          <td>thabo.mokoena@email.com</td>
+        </tr>
+        <tr>
+          <td>Linda Khumalo</td>
+          <td>5678 Second Avenue, Cape Town</td>
+          <td>082-765-4321</td>
+          <td>linda.khumalo@email.com</td>
+        </tr>
+        <tr>
+          <td>Nomsa Dlamini</td>
+          <td>91011 Third Road, Durban</td>
+          <td>076-543-9876</td>
+          <td>nomsa.dlamini@email.com</td>
+        </tr>
+        <tr>
+          <td>Lucas van der Merwe</td>
+          <td>1213 Fourth Lane, Pretoria</td>
+          <td>083-234-6789</td>
+          <td>lucas.vdm@email.com</td>
+        </tr>
+        <tr>
+          <td>Zanele Ndlovu</td>
+          <td>1415 Fifth Crescent, Bloemfontein</td>
+          <td>079-876-5432</td>
+          <td>zanele.ndlovu@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="POST">
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Dropdown Menu -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="southafrica">South Africa</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="india">India</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>Interests:</legend>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+
+        <label for="travel">Travel</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
